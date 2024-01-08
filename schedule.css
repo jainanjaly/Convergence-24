@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:poppins;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    background: linear-gradient(#060609, #161824);
+    overflow-x: hidden;
+ }
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+table, 
+    th, 
+    td { 
+        font-size: small;
+        /* padding: 5px; */
+        color: white;
+        border-right: 1px solid white; 
+        border-bottom: 1px solid white; 
+        border-radius: 0px;
+    } 
+table th{
+    font-weight: 1000000;
+    text-align: left;
+    border-bottom: 3px solid white;
+}
+table{
+    width: 100%;
+    height: 80vh;
+    border: 3px solid white;
+}
+.event-schedule{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding: 30px 0px;
+  }
+  .event-schedule a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  
+  }
+  .event-schedule button{
+    width: 140px;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+  }
+  .event-schedule img{
+    padding-top: 5px;
+    padding-right: 50px;
+    cursor: pointer;
+    width: 50px;
+    background: transparent;
+  }
+  .event-schedule img:hover{
+    transform: translateY(-5px);
+    transition: 0.2s ease-in;
+  }
