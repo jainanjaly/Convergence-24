@@ -102,10 +102,6 @@ header img{
   }
 
 }
-
-
-
-
 /* drop-down-style */
 
 .dropdown{
@@ -125,8 +121,6 @@ header img{
   cursor: pointer;
   border: none;
 }
-
-
 
 .content{
   position: absolute;
@@ -640,7 +634,7 @@ header img{
 }
 .linebreak{
   width: 100%;
-  background: #6c6c6c;
+  background: #515151;
   height: 3px;
   box-shadow: 0px 0px 5px;
 }
