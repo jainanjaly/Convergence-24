@@ -12,3 +12,8 @@ function undrop() {
   const drop = document.querySelector(".content");
   drop.style.display = "none";
 }
+document.getElementById('galleryContainer').addEventListener('scroll', function() {
+  let container = document.getElementById('galleryContainer');
+  let progress = container.scrollLeft / (container.scrollWidth - container.clientWidth);
+  document.documentElement.style.setProperty('--scroll-progress', progress);
+});
