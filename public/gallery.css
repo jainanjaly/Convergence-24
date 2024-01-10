@@ -15,7 +15,7 @@
   body {
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 100vh;
     display: flex;
     /* align-items: top; */
     /* justify-content: center; */
@@ -308,7 +308,7 @@
 
 @media (max-width: 768px) {
   .gallery {
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     padding: 10px; /* Adjust padding as needed for mobile layout */
   }
