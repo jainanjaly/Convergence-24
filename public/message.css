@@ -19,7 +19,7 @@
     display: flex;
     /* align-items: top; */
     /* justify-content: center; */
-    background: linear-gradient(#060609, #202234); /* Adjust colors as needed */
+    background: linear-gradient(#060609, #0e0f17); /* Adjust colors as needed */
     color: #fff; /* Text color on the gradient background */
     font-family: poppins;
     display: flex;
@@ -52,12 +52,13 @@
     border-bottom: orange;
   }
   .menu a:hover {
-    border-bottom: 2px solid orange ;
-    transform: translateX(-10px);
-    transition: 0.1s ease-out;
+    background: rgba(255, 217, 0, 0.721);
+    border-radius: 30px;
+    color: #161824;
+    transition: background 0.5s ease-out;
   }
   .menu a:active {
-    color: orange;
+    color: white;
   }
   @media all and (max-width: 600px){
     header img{
@@ -100,6 +101,7 @@
   border-radius: 40px 0px 0px 40px;
   transition: display 1s;
   box-shadow: -10px 10px 60px black;
+  z-index: 111;
 }
 .content a{
   background: transparent;
@@ -149,9 +151,9 @@
   }
 }
 
-.space2{
+/* .space2{
   height: 30px;
-}
+} */
 
 /*Messages*/
 .messages{
@@ -160,28 +162,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 0px;
+  margin: 0px 0px;
   font-family: poppins;
   margin-bottom: 10px;
   /* background: red; */
 }
 .messages p{
   font-size: 22px;
-  text-align: center;
+  text-align: justify;
+  width: 85vw;
   word-spacing: 2px;
   font-weight: lighter;
-  font-style: italic;
   font-family:poppins;
-  text-shadow: 0px 0px 10px rgba(213, 186, 32, 0.344);
+  /* background: #161824; */
+  background: black;
+  margin: 120px 90px;
+  padding: 100px 40px 40px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(255, 166, 0, 0.09);
+  z-index: 1;
+  
+
 }
 
+
 .messages img{
-    width: 180px;
+    width: 190px;
     border-radius: 400px;
     box-shadow: 0px 0px 10px black;
     background: red;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 3px solid orange;
+    /* position: absolute; */
+    z-index: 111;
+    margin-right: 30px;
+    margin-left: 30px;
+
 }
 .hod, .tabitha , .sukrit{
     display: flex;
@@ -190,15 +207,49 @@
 }
 
 .messages h2{
-  border-bottom: 1px solid rgb(61, 57, 32);
-  color: rgb(174, 148, 1);
+  /* border-bottom: 1px solid rgb(61, 57, 32); */
+  /* color: rgb(174, 148, 1); */
+  color: black;
   padding: 20px;
-  font-size: 30px;
+  font-size: 35px;
+  margin: 40px 0px;
   font-family: poppins;
-  text-align: center;
+  /* text-align: justify; */
+}
+.pics{
+  display: flex;
+  justify-content: left;
+  /* align-items:end; */
+  /* align-items: center; */
+  position: relative;
+  top: 180px;
+  background: rgb(183, 155, 2);
+  border-radius: 20px;
+  width: 90vw;
 }
 @media all and (max-width: 900px){
     .messages p{
-        padding: 20px 20px
-    };
+        font-size: 12px;
+        padding: 60px 20px 20px 20px;
+        margin: 10px 10px;
+    }
+    .pics{
+      width: 90vw;
+      top: 70px;
+      gap: 0px;
+
+    }
+    .messages h2{
+      font-size: 11px;
+      /* background: red; */
+      margin: 0px 0px;
+    }
+    .messages img{
+      width: 100px;
+      height: 100px;
+      background: blue;
+      margin: 10px 0px;
+      margin-left: 10px;
+    }
+
 }

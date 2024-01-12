@@ -52,12 +52,13 @@
     border-bottom: orange;
   }
   .menu a:hover {
-    border-bottom: 2px solid orange ;
-    transform: translateX(-10px);
-    transition: 0.1s ease-out;
+    background: rgba(255, 217, 0, 0.721);
+    border-radius: 30px;
+    color: #161824;
+    transition: background 0.5s ease-out;
   }
   .menu a:active {
-    color: orange;
+    color: white;
   }
   @media all and (max-width: 600px){
     header img{
@@ -100,6 +101,7 @@
   border-radius: 40px 0px 0px 40px;
   transition: display 1s;
   box-shadow: -10px 10px 60px black;
+  z-index: 111;
 }
 .content a{
   background: transparent;

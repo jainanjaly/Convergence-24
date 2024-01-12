@@ -12,7 +12,7 @@ html{
 }
 body {
     width: 100%;
-    background: linear-gradient(#060609, #161824);
+    background: linear-gradient(#060609, #090a10);
     overflow-x: hidden;
  }
 
@@ -31,9 +31,14 @@ table,
         border-radius: 0px;
     } 
 table th{
-    font-weight: 1000000;
+    font-weight: 1000;
+    font-size: 20px;
     text-align: left;
     border-bottom: 3px solid white;
+    color: rgb(187, 159, 0);
+}
+table td,table th{
+  text-align: center;
 }
 table{
     width: 100%;

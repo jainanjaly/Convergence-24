@@ -85,15 +85,15 @@ header img{
   opacity: 0.2;
   animation: animate 4s linear infinite ;
 }
-@media all and (max-width: 900px){
+/* @media all and (max-width: 900px){
   .svg{
     /* overflow: hidden;
     width: 400px;
     height: 300px;
     background: transparent;
     border: none; */
-  }
-}
+  /* }
+/* } */
 @keyframes animate{
   0%{
     transform: translateX(-1px);
@@ -594,9 +594,10 @@ header img{
 .dept-details{
   margin-bottom: 10px;
 }
-.dept-details h3 a{
+.fest-details h3 a{
   text-decoration: none;
   color: white;
+  padding-top: 30px;
   font-size: 29px;
 }
 .fest-details{
@@ -605,6 +606,7 @@ header img{
 .fest-details p, .dept-details p{
   font-size: 17px;
   text-align: justify;
+  padding: 20px;
   /* padding: 30px 100px; */
   word-spacing: 2px;
   font-weight: lighter;
